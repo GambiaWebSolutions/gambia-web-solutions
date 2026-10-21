@@ -1,105 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Gambia Web Solutions helps businesses in The Gambia build a professional online presence with affordable, mobile-friendly websites.">
-  <title>Gambia Web Solutions | Websites for Gambian Businesses</title>
-  <style>
-    :root {
-      --navy: #0b1830;
-      --blue: #12345a;
-      --green: #20c997;
-      --white: #ffffff;
-      --muted: #c3cede;
-      --panel: #142541;
-    }
-
-    * { box-sizing: border-box; }
-    html { scroll-behavior: smooth; }
-    body {
-      margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-      background: var(--navy);
-      color: var(--white);
-      line-height: 1.6;
-    }
-    a { color: inherit; text-decoration: none; }
-    .container { width: min(1120px, 90%); margin: auto; }
-    header {
-      border-bottom: 1px solid #293954;
-      position: sticky;
-      top: 0;
-      z-index: 10;
-      background: rgba(11, 24, 48, .96);
-    }
-    nav {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      gap: 20px;
-      padding: 18px 0;
-    }
-    .brand { font-size: 1.15rem; font-weight: 800; }
-    .brand span { color: var(--green); }
-    .nav-links { display: flex; gap: 22px; align-items: center; }
-    .nav-links a:hover { color: var(--green); }
-    .button {
-      display: inline-block;
-      padding: 12px 21px;
-      border-radius: 8px;
-      font-weight: 700;
-      background: var(--green);
-      color: #06251e;
-    }
-    .button:hover { filter: brightness(1.08); }
-    .hero {
-      padding: 95px 0 85px;
-      background: radial-gradient(ellipse at 85% 20%, #17466a 0, transparent 45%);
-    }
-    .hero-content { max-width: 760px; }
-    .eyebrow {
-      color: var(--green);
-      font-weight: 700;
-      letter-spacing: 2px;
-      text-transform: uppercase;
-      font-size: .82rem;
-    }
-    h1 { font-size: clamp(2.5rem, 6vw, 4.6rem); line-height: 1.08; margin: 18px 0; }
-    h1 span, h2 span { color: var(--green); }
-    .hero p { font-size: 1.15rem; color: var(--muted); max-width: 650px; }
-    .actions { display: flex; gap: 14px; flex-wrap: wrap; margin-top: 28px; }
-    .button-outline { border: 1px solid #8192aa; color: white; background: transparent; }
-    section { padding: 76px 0; }
-    .section-heading { max-width: 700px; margin-bottom: 35px; }
-    h2 { font-size: clamp(2rem, 4vw, 3rem); line-height: 1.15; margin: 10px 0 16px; }
-    .section-heading p, .muted { color: var(--muted); }
-    .cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
-    .card {
-      padding: 26px;
-      background: var(--panel);
-      border: 1px solid #293954;
-      border-radius: 14px;
-    }
-    .card .symbol { font-size: 1.8rem; }
-    h3 { margin: 12px 0 8px; font-size: 1.25rem; }
-    .card p { color: var(--muted); margin-bottom: 0; }
-    .band { background: #10213d; }
-    .steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 25px; }
-    .step-number { color: var(--green); font-size: 1.8rem; font-weight: 800; }
-    .contact-panel {
-      background: var(--panel);
-      border: 1px solid #293954;
-      border-radius: 18px;
-      padding: 38px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      gap: 25px;
-    }
-    .contact-panel p { color: var(--muted); }
-    footer { padding: 25px 0; border-top: 1px solid #293954; color: var(--muted); font-size: .9rem; }
-    .footer-inner { display: flex; justify-content: space-between; gap: 15px; flex-wrap: wrap; }
-    @media (max-width: 760px) {
-      nav { align-items: flex-start; flex-direction: column; }
-      .nav-links { flex-wrap: wrap; gap: 12px 18px; font-size: .92
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Gambia Web Solutions helps businesses in The Gambia with professional websites, business cards, photo enhancement and business sign design.">
+<meta name="theme-color" content="#0b1830">
+<title>Gambia Web Solutions | Digital &amp; Design Services</title>
+<style>
+:root{--navy:#0b1830;--green:#20c997;--white:#fff;--muted:#c3cede;--panel:#142541;--border:#293954;--dark-green:#06251e}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,Helvetica,sans-serif;background:var(--navy);color:var(--white);line-height:1.6}
+a{color:inherit;text-decoration:none}.container{width:min(1120px,90%);margin:auto}
+header{border-bottom:1px solid var(--border);position:sticky;top:0;z-index:10;background:rgba(11,24,48,.97)}
+nav{display:flex;justify-content:space-between;align-items:center;gap:20px;padding:18px 0}.brand{font-size:1.15rem;font-weight:800}.brand span,h1 span,h2 span{color:var(--green)}
+.nav-links{display:flex;gap:22px;align-items:center}.nav-links a:hover,.project-link:hover{color:var(--green)}
+.button{display:inline-block;padding:12px 21px;border-radius:8px;font-weight:700;background:var(--green);color:var(--dark-green)}.button-outline{border:1px solid #8192aa;color:white;background:transparent}
+.hero{padding:95px 0 85px;background:radial-gradient(ellipse at 85% 20%,#17466a 0,transparent 45%)}.hero-content{max-width:780px}
+.eyebrow{color:var(--green);font-weight:700;letter-spacing:2px;text-transform:uppercase;font-size:.82rem}
+h1{font-size:clamp(2.5rem,6vw,4.6rem);line-height:1.08;margin:18px 0}.hero p{font-size:1.15rem;color:var(--muted);max-width:650px}
+.actions{display:flex;gap:14px;flex-wrap:wrap;margin-top:28px}section{padding:76px 0}.section-heading{max-width:700px;margin-bottom:35px}
+h2{font-size:clamp(2rem,4vw,3rem);line-height:1.15;margin:10px 0 16px}.section-heading p,.muted{color:var(--muted)}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.card{padding:26px;background:var(--panel);border:1px solid var(--border);border-radius:14px}
+.symbol{font-size:1.8rem}h3{margin:12px 0 8px;font-size:1.25rem}.card p{color:var(--muted);margin-bottom:0}
+.band{background:#10213d}.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:25px}.step-number{color:var(--green);font-size:1.8rem;font-weight:800}
+.project-link{color:var(--green);font-weight:700;display:inline-block;margin-top:16px}
+.contact-panel{background:var(--panel);border:1px solid var(--border);border-radius:18px;padding:38px;display:flex;justify-content:space-between;align-items:center;gap:25px}
+.contact-panel p{color:var(--muted)}.contact-details{display:grid;gap:12px;min-width:250px}.contact-details a{overflow-wrap:anywhere}.contact-details a:hover{color:var(--green)}
+footer{padding:25px 0;border-top:1px solid var(--border);color:var(--muted);font-size:.9rem}.footer-inner{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}
+@media(max-width:760px){nav{align-items:flex-start;flex-direction:column}.nav-links{flex-wrap:wrap;gap:12px 18px;font-size:.92rem}.cards,.steps{grid-template-columns:1fr}.hero{padding:68px 0 60px}section{padding:56px 0}.contact-panel{flex-direction:column;align-items:flex-start;padding:26px}.contact-details{min-width:0}}
+</style>
+</head>
+<body>
+<header><div class="container"><nav aria-label="Main navigation">
+<a class="brand" href="#home">Gambia <span>Web Solutions</span></a>
+<div class="nav-links"><a href="#services">Services</a><a href="#how-it-works">How it works</a><a href="#projects">Projects</a><a href="#contact">Contact</a></div>
+</nav></div></header>
+<main>
+<section class="hero" id="home"><div class="container"><div class="hero-content">
+<div class="eyebrow">Websites • Design • Business Branding</div>
+<h1>Give your business a <span>stronger presence.</span></h1>
+<p>We help businesses in The Gambia look professional, reach customers and share what they offer — online, in print and on their shop signs.</p>
+<div class="actions"><a class="button" href="https://wa.me/4792323840" target="_blank" rel="noopener">Chat with us on WhatsApp</a><a class="button button-outline" href="#services">Explore our services</a></div>
+</div></div></section>
+<section id="services"><div class="container"><div class="section-heading"><div class="eyebrow">Our services</div><h2>Practical solutions for <span>your business.</span></h2><p>From your first website to the printed materials customers see every day, we help you present a consistent, professional image.</p></div>
+<div class="cards">
+<article class="card"><div class="symbol" aria-hidden="true">🌐</div><h3>Business Websites</h3><p>Professional, mobile-friendly websites that introduce your business, explain your services and make it easy for customers to contact you.</p></article>
+<article class="card"><div class="symbol" aria-hidden="true">💳</div><h3>Business Card Design</h3><p>Clear, attractive business cards featuring your business name, logo, phone, WhatsApp, email and other important details.</p></article>
+<article class="card"><div class="symbol" aria-hidden="true">🖼️</div><h3>Photo Enhancement</h3><p>Refresh and improve photos for websites, social media, adverts and print materials, helping your business look its best.</p></article>
+<article class="card"><div class="symbol" aria-hidden="true">🏪</div><h3>Business Sign Design</h3><p>Professional shop and business sign designs tailored to your brand, location and the impression you want to make.</p></article>
+<article class="card"><div class="symbol" aria-hidden="true">✨</div><h3>Sign Production Partner</h3><p>Through our established production partner, we can arrange sign production using materials such as Alucobond and Plexiglass. Design and production details are agreed before the order.</p></article>
+<article class="card"><div class="symbol" aria-hidden="true">🛠️</div><h3>Website Updates &amp; Support</h3><p>Practical help with keeping website information current. The scope, frequency and price of updates or ongoing support are agreed clearly in advance.</p></article>
+</div></div></section>
+<section class="band" id="how-it-works"><div class="container"><div class="section-heading"><div class="eyebrow">Simple process</div><h2>From idea to <span>finished result.</span></h2><p>We keep the process clear and practical, with expectations agreed before work begins.</p></div>
+<div class="steps"><article><div class="step-number">01</div><h3>Tell us what you need</h3><p class="muted">Contact us on WhatsApp and explain your business, idea or design request. You can share reference photos and information there.</p></article>
+<article><div class="step-number">02</div><h3>Agree on the details</h3><p class="muted">We discuss the requirements, price, delivery expectations and any production or support arrangements.</p></article>
+<article><div class="step-number">03</div><h3>Review and deliver</h3><p class="muted">We prepare the agreed work and review the details with you before the final delivery or launch.</p></article></div></div></section>
+<section id="projects"><div class="container"><div class="section-heading"><div class="eyebrow">Selected work</div><h2>Business websites we've <span>worked on.</span></h2><p>Explore these examples of websites created for businesses.</p></div>
+<div class="cards"><article class="card"><div class="symbol" aria-hidden="true">🚘</div><h3>Bah Auto's Sell And Rental Services</h3><p>A business website presenting vehicle sales and rental services with customer contact information.</p><a class="project-link" href="https://bahsautosgambia.netlify.app" target="_blank" rel="noopener">Visit website ↗</a></article>
+<article class="card"><div class="symbol" aria-hidden="true">👜</div><h3>Amanda's Cosmetic &amp; Fashion Shop</h3><p>A shop website introducing fashion and cosmetic products, business hours and ways to get in touch.</p><a class="project-link" href="https://amandashop.netlify.app" target="_blank" rel="noopener">Visit website ↗</a></article>
+<article class="card"><div class="symbol" aria-hidden="true">✨</div><h3>Your business could be next</h3><p>Let's discuss a website, business card, photo refresh or sign design that fits your business.</p><a class="project-link" href="#contact">Start a conversation ↗</a></article></div></div></section>
+<section class="band" id="contact"><div class="container"><div class="contact-panel"><div><div class="eyebrow">Get in touch</div><h2>Let's make your business <span>stand out.</span></h2><p>WhatsApp is the easiest way to start. Tell us what you need and share any useful details or reference images.</p></div>
+<div class="contact-details"><a class="button" href="https://wa.me/4792323840" target="_blank" rel="noopener">Message us on WhatsApp</a><a href="mailto:gambiawebsolutions@gmail.com">✉ gambiawebsolutions@gmail.com</a><a href="tel:+4792323840">☎ +47 9232 3840</a></div>
+</div></div></section>
+</main>
+<footer><div class="container footer-inner"><span>© 2026 Gambia Web Solutions. All rights reserved.</span><span>Website designed by Gambia Web Solutions</span></div></footer>
+</body></html>
