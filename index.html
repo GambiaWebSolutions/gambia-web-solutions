@@ -19,7 +19,13 @@ nav{display:flex;justify-content:space-between;align-items:center;gap:20px;paddi
 h1{font-size:clamp(2.5rem,6vw,4.6rem);line-height:1.08;margin:18px 0}.hero p{font-size:1.15rem;color:var(--muted);max-width:650px}
 .actions{display:flex;gap:14px;flex-wrap:wrap;margin-top:28px}section{padding:76px 0}.section-heading{max-width:700px;margin-bottom:35px}
 h2{font-size:clamp(2rem,4vw,3rem);line-height:1.15;margin:10px 0 16px}.section-heading p,.muted{color:var(--muted)}
-.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.card{padding:26px;background:var(--panel);border:1px solid var(--border);border-radius:14px}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.card{position:relative;overflow:hidden;padding:26px;background:var(--panel);border:1px solid var(--border);border-radius:14px;transition:transform .22s ease,box-shadow .22s ease,border-color .22s ease}
+.card::after{content:"";position:absolute;left:0;right:0;bottom:0;height:3px;background:var(--green);transform:scaleX(0);transform-origin:left;transition:transform .22s ease}
+@media(hover:hover){.card:hover{transform:translateY(-6px);border-color:rgba(32,201,151,.65);box-shadow:0 14px 28px rgba(0,0,0,.24),0 5px 14px rgba(32,201,151,.10)}.card:hover::after{transform:scaleX(1)}}
+.card:active{transform:translateY(-3px);border-color:rgba(32,201,151,.65);box-shadow:0 8px 18px rgba(0,0,0,.22)}
+.card:active::after{transform:scaleX(1)}
+@media(prefers-reduced-motion:reduce){.card,.card::after{transition:none}}
 .symbol{font-size:1.8rem}h3{margin:12px 0 8px;font-size:1.25rem}.card p{color:var(--muted);margin-bottom:0}
 .band{background:#10213d}.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:25px}.step-number{color:var(--green);font-size:1.8rem;font-weight:800}
 .project-link{color:var(--green);font-weight:700;display:inline-block;margin-top:16px}
@@ -39,7 +45,7 @@ footer{padding:25px 0;border-top:1px solid var(--border);color:var(--muted);font
 <div class="eyebrow">Websites • Design • Business Branding</div>
 <h1>Give your business a <span>stronger presence.</span></h1>
 <p>We help businesses in The Gambia look professional, reach customers and share what they offer — online, in print and on their shop signs.</p>
-<div class="actions"><a class="button" href="https://wa.me/4792323840" target="_blank" rel="noopener">Chat with us on WhatsApp</a><a class="button button-outline" href="#services">Explore our services</a></div>
+<div class="actions"><a class="button" href="https://wa.me/4792323840" target="_blank" rel="noopener">Call or Message Us on WhatsApp</a><a class="button button-outline" href="#services">Explore our services</a></div>
 </div></div></section>
 <section id="services"><div class="container"><div class="section-heading"><div class="eyebrow">Our services</div><h2>Practical solutions for <span>your business.</span></h2><p>From your first website to the printed materials customers see every day, we help you present a consistent, professional image.</p></div>
 <div class="cards">
@@ -59,7 +65,7 @@ footer{padding:25px 0;border-top:1px solid var(--border);color:var(--muted);font
 <article class="card"><div class="symbol" aria-hidden="true">👜</div><h3>Amanda's Cosmetic &amp; Fashion Shop</h3><p>A shop website introducing fashion and cosmetic products, business hours and ways to get in touch.</p><a class="project-link" href="https://amandashop.netlify.app" target="_blank" rel="noopener">Visit website ↗</a></article>
 <article class="card"><div class="symbol" aria-hidden="true">✨</div><h3>Your business could be next</h3><p>Let's discuss a website, business card, photo refresh or sign design that fits your business.</p><a class="project-link" href="#contact">Start a conversation ↗</a></article></div></div></section>
 <section class="band" id="contact"><div class="container"><div class="contact-panel"><div><div class="eyebrow">Get in touch</div><h2>Let's make your business <span>stand out.</span></h2><p>WhatsApp is the easiest way to start. Tell us what you need and share any useful details or reference images.</p></div>
-<div class="contact-details"><a class="button" href="https://wa.me/4792323840" target="_blank" rel="noopener">Message us on WhatsApp</a><a href="mailto:gambiawebsolutions@gmail.com">✉ gambiawebsolutions@gmail.com</a><a href="tel:+4792323840">☎ +47 9232 3840</a></div>
+<div class="contact-details"><a class="button" href="https://wa.me/4792323840" target="_blank" rel="noopener">Call or Message Us on WhatsApp</a><a href="mailto:gambiawebsolutions@gmail.com">✉ gambiawebsolutions@gmail.com</a></div>
 </div></div></section>
 </main>
 <footer><div class="container footer-inner"><span>© 2026 Gambia Web Solutions. All rights reserved.</span><span>Website designed by Gambia Web Solutions</span></div></footer>
